@@ -14,6 +14,8 @@ class Group(models.Model):
 class User(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
+    username = models.CharField(max_length=25)
+    password = models.CharField(max_length=50)
     status = models.TextField()
     profile_picture = models.ImageField(null=True, blank=True)
     group = models.ManyToManyField(Group)
