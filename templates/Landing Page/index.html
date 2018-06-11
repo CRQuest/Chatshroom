@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="{% static 'landing/img/Logo.png' %}">
-    <title>Chatshroom Coming Up </title>
+    <title>Chatshroom</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'landing/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -36,13 +36,13 @@
           <div class="col-12 my-auto">
             <div class="masthead-content text-white py-5 py-md-0">
               <img src="{% static 'landing/img/Name.png' %}" class="mb-4" style="width:400px;height:70px;border:0;">
-              <p class="mb-5">We're working hard to finish the development of this site. We are planning to launch this
-                <strong>Pretty Soon</strong>! Sign up for updates using the form below!</p>
+              <p class="mb-5">We're working hard to finish the development of this site. Sign up for updates using the form below!</p>
               <div class="input-group input-group-newsletter">
                 <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
                 <div class="input-group-append">
                   <button class="btn btn-secondary" type="button">Notify Me!</button>
                 </div>
+                  <a href="{% url 'chat:main' %}" class="btn btn-primary"></a>
               </div>
             </div>
           </div>
