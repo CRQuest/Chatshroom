@@ -63,7 +63,7 @@
 
         <div class="form">
             <div class="wrap-login100 animated fade-in-right">
-                <form class="login100-form validate-form">
+                <form class="login100-form validate-form" action="{% url 'blog:login_submit' %}" method="post">
 					<span class="login100-form-logo">
 						<img src={% static 'chat/images/Logo.png' %}" style="width:100px;height:100px;">
 					</span>
@@ -90,7 +90,7 @@
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
+                        <button class="login100-form-btn" type="submit">
                             Login
                         </button>
                     </div>
