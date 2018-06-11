@@ -9,7 +9,7 @@ def main(request):
         'title': 'it worked'
     }
 
-    return render(request, 'chat/main.html', context)
+    return render(request, 'chat/index.html', context)
 
 
 
